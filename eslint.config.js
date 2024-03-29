@@ -47,7 +47,6 @@ const STANDARD_MODULE_RULES = {
       ignoreGlobals: true,
     },
   ],
-  curly: ["error", "multi-line", "consistent"],
   eqeqeq: SEVERITIES.ERROR,
   "new-cap": SEVERITIES.ERROR,
   "no-array-constructor": SEVERITIES.ERROR,
@@ -160,6 +159,11 @@ const OTHER_PREFERENCE_RULES = {
   "prefer-promise-reject-errors": SEVERITIES.ERROR,
   "prefer-template": SEVERITIES.ERROR,
 };
+const OVERWRITTEN_PRETTIER_RULES = {
+  rules: {
+    curly: ["error", "multi-line", "consistent"],
+  },
+};
 
 export default [
   js.configs.recommended,
@@ -177,4 +181,5 @@ export default [
     },
   },
   eslintConfigPrettier,
+  OVERWRITTEN_PRETTIER_RULES,
 ];
