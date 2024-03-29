@@ -9,7 +9,8 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier . --check",
     "prettier:fix": "prettier . --write",
-    "format": "npm run prettier:fix && npm run lint:fix"
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
     "@eslint/js": "^8.57.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5"
   }
 }
