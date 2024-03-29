@@ -1,4 +1,3 @@
 export default {
-  "**/*": "prettier --write --ignore-unknown",
-  "*.js": "eslint",
+  "**/*": ["prettier --write", "eslint --fix", "prettier --write"],
 };
