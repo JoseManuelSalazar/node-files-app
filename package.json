@@ -4,7 +4,14 @@
   "description": "This app can list files/directories that are located in a given directory and also allows an option to change extensions of those files.",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "format": "npm run prettier:fix && npm run lint:fix && npm run prettier:fix",
+    "prepare": "husky"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JoseManuelSalazar/node-files-app.git"
@@ -13,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/JoseManuelSalazar/node-files-app/issues"
   },
-  "homepage": "https://github.com/JoseManuelSalazar/node-files-app#readme"
+  "homepage": "https://github.com/JoseManuelSalazar/node-files-app#readme",
+  "devDependencies": {
+    "@eslint/js": "^8.57.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
+  }
 }
