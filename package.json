@@ -1,0 +1,17 @@
+{
+  "name": "files-app",
+  "version": "1.0.0",
+  "description": "This app can list files/directories that are located in a given directory and also allows an option to change extensions of those files.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseManuelSalazar/node-files-app.git"
+  },
+  "author": "manusdev",
+  "bugs": {
+    "url": "https://github.com/JoseManuelSalazar/node-files-app/issues"
+  },
+  "homepage": "https://github.com/JoseManuelSalazar/node-files-app#readme"
+}
