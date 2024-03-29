@@ -1,5 +1,6 @@
 import globals from "globals";
 import js from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 const SEVERITIES = {
   OFF: 0,
@@ -175,4 +176,5 @@ export default [
       ...OTHER_PREFERENCE_RULES,
     },
   },
+  eslintConfigPrettier,
 ];
