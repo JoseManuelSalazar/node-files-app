@@ -83,12 +83,9 @@ const OTHER_PREFERENCE_RULES = {
   // Rules related to possible problems
   "array-callback-return": SEVERITIES.ERROR,
   "no-await-in-loop": SEVERITIES.WARN,
-  "no-constant-binary-expression": SEVERITIES.ERROR,
   "no-constructor-return": SEVERITIES.ERROR,
-  "no-new-native-nonconstructor": SEVERITIES.ERROR,
   "no-promise-executor-return": SEVERITIES.ERROR,
   "no-unreachable-loop": SEVERITIES.ERROR,
-  "no-unused-private-class-members": SEVERITIES.ERROR,
   "no-use-before-define": SEVERITIES.ERROR,
   "require-atomic-updates": SEVERITIES.ERROR,
   // Rules related to suggestions
@@ -123,13 +120,11 @@ const OTHER_PREFERENCE_RULES = {
   // "no-console": SEVERITIES.ERROR,
   "no-else-return": SEVERITIES.ERROR,
   "no-empty-function": SEVERITIES.ERROR,
-  "no-empty-static-block": SEVERITIES.ERROR,
   "no-implicit-coercion": SEVERITIES.ERROR,
   "no-lonely-if": SEVERITIES.ERROR,
   "no-magic-numbers": [
     SEVERITIES.ERROR,
     {
-      // eslint-disable-next-line no-magic-numbers
       ignore: [0, 1],
       // ignoreArrayIndexes: true,
       ignoreDefaultValues: true,
