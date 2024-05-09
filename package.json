@@ -1,7 +1,7 @@
 {
   "name": "files-app",
   "version": "1.0.0",
-  "description": "This app can list files/directories that are located in a given directory and also allows an option to change extensions of those files.",
+  "description": "This app can list and display information about files and directories located in a given path.",
   "main": "index.js",
   "type": "module",
   "scripts": {
